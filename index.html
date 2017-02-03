@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="header">
+        <div id="top-navbar">
+            <div id="logo" class="border-radius">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+        </div>
+        <div id="social-media">
+            <img src="img/yt.png" alt="">
+            <img src="img/fb.png" alt="">
+            <img src="img/tw.png" alt="">                
+        </div>
+    </div>
+
+    <!--
+
+        FIRST PAGE
+
+    -->
+    <div id="dissappear" class="show">
+
+        <!-- TITLES -->
+        <div id="titles">
+            <h1 id="main-title">
+                <span id="shadow"><strong>WIN</strong> een doos met <br>
+                2 <strong>NIEUWE</strong> soorten <strong>LEGO</strong></span>
+            </h1>
+            <div id="button-line">
+                <div id="instruction" class="b-r">
+                    Selecteer uw 2 keuzes klik op: Volgende
+                </div>
+                <div id="volgende-button" class="next b-r hidden">Volgende</div>
+            </div>
+        </div>
+
+        <!-- CARDS TO CHOOSE FROM -->
+        <div id="body-cards">
+                <div class="cards"><img src="img/pic1.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic1.png" alt="Lego City" selected="no" /></div>
+                <div class="cards"><img src="img/pic2.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic2.png" alt="Lego City" selected="no" /></div>
+                <div class="cards"><img src="img/pic3.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic3.png" alt="Lego City" selected="no" /></div>
+                <div class="cards"><img src="img/pic4.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic4.png" alt="Lego City" selected="no" /></div>
+                <div class="cards"><img src="img/pic5.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic5.png" alt="Lego City" selected="no" /></div>
+                <div class="cards"><img src="img/pic6.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic6.png" alt="Lego City" selected="no" /></div>
+                <div class="cards"><img src="img/pic7.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic7.png" alt="Lego City" selected="no" /></div>
+                <div class="cards"><img src="img/pic8.png" alt="Lego City" selected="no" /></div>
+                <div class="cards mobile"><img src="img/mobile/pic8.png" alt="Lego City" selected="no" /></div>
+        </div>
+        <div id="button-line">
+            <div id="volgende-button-mobile" class="next b-r hidden">Volgende</div>
+        </div>
+
+        <!-- BOTTOM NAVBAR -->
+        <div id="bottom-navbar">
+          <img src="img/nav.png" alt="" stage="1" />
+        </div>
+    </div>
+
+    <!--
+
+        SECOND PAGE
+
+    -->
+
+    <div id="appear" class="hidden">
+
+        <!-- TITLES -->
+        <div id="titles">
+            <h1 id="main-title">
+                <span id="shadow"><strong>WIN</strong> een doos met <br />
+                2 <strong>NIEUWE</strong> soorten <strong>LEGO</strong></span>
+            </h1>
+            <div id="free-delivery" class="b-r">
+                Gratis thuis bezorgd.
+            </div>
+            <div id="instruction-two" class="b-r">
+                <sup>U heeft nog <span>time</span> om deel te nemen.</sup><br>
+                Vul uw gegevens hieronder in
+            </div>
+        </div>
+
+        <div id="form-and-pics">
+
+            <!-- LEFT IMAGE -->
+            <div id="pic1" class="cards"><img src="#" alt="Lego City" selected="no" /></div>
+            
+            <!-- FORM -->
+            <div id="form">
+                <form>
+                    <div class="form-row">
+                        <input type="radio" name="" value="">
+                        <input type="radio">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Phone#">
+                    </div>
+                    <div class="form-row dates">
+                        <select>
+                            <option value="volvo">Day</option>
+                        </select>
+                        <select>
+                            <option value="volvo">Month</option>
+                        </select>
+                        <select>
+                            <option value="volvo">Year</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="radio">
+                    </div>
+                    <div class="form-row">
+                        <button class="big-red-button" type="submit">Ga GRATIS verder</button>
+                    </div>
+                </form> 
+            </div> 
+
+            <!-- RIGHT IMAGE -->
+            <div id="pic2" class="cards"><img src="#" alt="Lego City" selected="no" /></div>
+            </div>
+
+            <!-- BOTTOM NAVBAR -->
+            <div id="bottom-navbar-two">
+                <img src="img/nav.png" alt="" stage="1" />
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

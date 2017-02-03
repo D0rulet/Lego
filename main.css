@@ -1,0 +1,371 @@
+/*
+
+Fonts and a couple of basics;
+
+*/
+
+@font-face{
+    font-family: Ubuntu-Medium;
+    src: url('font/Ubuntu-Medium.woff');
+    src: url('font/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+           url('font/Ubuntu-Medium.woff') format('woff'),
+           url('font/Ubuntu-Medium.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face{
+    font-family: Ubuntu-Bold;
+    src: url('font/Ubuntu-Bold.woff');
+    src: url('font/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+           url('font/Ubuntu-Bold.woff') format('woff'),
+           url('font/Ubuntu-Bold.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+h1,h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+body{
+   background: url(./img/bg.jpg) no-repeat center bottom fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu-Medium';
+}
+
+.b-r{
+    border-radius: 10px;
+}
+.hidden{
+    display: none;
+}
+.mobile img{
+    display: none;
+}
+
+/*
+
+Main elements of the first page
+
+*/
+
+#header{
+    background-color: white;
+    height: 6vh;
+    width: 100vw;
+    -webkit-box-shadow: 0 5px 10px #888888;
+       -moz-box-shadow: 0 5px 10px #888888;
+            box-shadow: 0 5px 10px #888888;
+    margin: 0 auto;
+}
+#top-navbar{
+    display: block;
+    width: 50vw;
+    height: 8vh;
+    margin: 0 0 0 25vw;
+}
+#logo img{
+    height: 11vmin;
+    width: 11vmin;
+    margin-left: 1%;
+}
+#social-media{
+    width: 25vw;
+    float: right;
+    position: relative;
+    top: -9vh;
+    margin-right: 20px;
+}
+#social-media img{
+    position: relative;
+    height: 3vmin;
+    width: 3vmin;
+    top: 2.5vh;
+    float: right;
+    padding-right: 5px;
+}
+#titles{
+    width: 50vw;
+    height: 20vmin;
+    margin: 0 auto;
+    text-align: center;
+}
+#main-title{
+    color: #FFFFFF;
+    font-size: 3vw;
+    text-shadow: 0 5px 5px #888888;
+    position:relative;
+    width: 50vw;
+    margin: 0 auto;
+}
+#button-line{
+    margin-top: 20px;
+    height: 3.5vh;
+}
+#button-line div{
+    padding: 3px 0;
+    margin: 0 2%;
+    text-align: center;
+    font-size: 1.5vw;
+    -webkit-box-shadow: 0 5px 10px #888888;
+       -moz-box-shadow: 0 5px 10px #888888;
+            box-shadow: 0 5px 10px #888888;
+}
+#instruction{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #564e50;
+    width: 73%;
+    float: left;
+}
+#volgende-button{
+    color: #FFFFFF;
+    background-color: #c6312e;
+    width: 23%;
+    float: right;
+    cursor: pointer;
+}
+#body-cards{
+    width: 50vw;
+    height: 60vh;
+    margin: 2vh auto;
+    clear: both;
+}
+
+/*
+
+Animation of the cards - Hover
+
+*/
+
+#body-cards .cards img{
+    width: 23%;
+    margin: 1% 1%;
+    float: left;
+    cursor: pointer;
+    filter: grayscale(70%) opacity(60%);
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    -webkit-box-shadow: 0 0 0 #888888;
+       -moz-box-shadow: 0 0 0 #888888;
+            box-shadow: 0 0 0 #888888;
+    border-radius: 8px;
+}
+#body-cards .cards img:hover, .animate-cards{
+    transform: scale(1.05);
+    filter: grayscale(0) opacity(100%)!important;
+      -webkit-box-shadow: 0 8px 6px -6px #888888;
+         -moz-box-shadow: 0 8px 6px -6px #888888;
+              box-shadow: 0 8px 6px -6px #888888;
+}
+
+/*
+
+The little bar that, in theory, lets you know on which step or the process you are
+
+*/
+
+#bottom-navbar{
+    width: 25vw;
+    margin: 0 auto;
+    height: 20px;
+}
+#bottom-navbar img{
+    width: 100%;
+}
+
+/*
+
+Second Page
+
+*/
+
+#appear #titles{
+    height: 30vh;
+}
+#free-delivery{
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+#instruction-two{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2px 5px;
+    width:50%;
+    margin: 0 auto;
+    font-size: 1.5vw;
+    color: #564e50;
+    margin-top: 20px;
+}
+sup{
+    font-size: .8vw;
+}
+#form-and-pics{
+    width: 60vw;
+    height: 40vh;
+    margin: 0 auto;
+}
+#form{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #564e50;
+    width: 40%;
+    padding: 1% 1%;
+    border-radius: 8px;
+    float: left; 
+}
+#form-and-pics .cards{
+    width: 29%;
+    float: left; 
+}
+#form-and-pics .cards img{
+    width:70%;
+    margin: 0 15%;
+}
+form input, select{
+    border-radius: 4px;
+    border: none;
+    margin: 4px;
+    height: 25px;
+}
+.form-row{
+    margin: 15px 0;
+}
+input[type=radio]{
+    width: 2em;
+    height: 2em;
+    border: none;   
+    margin-right: 40px; 
+}
+input[type=text]{
+    width: 90%;
+    border: none;
+    padding: 0 2%;
+    -webkit-box-shadow: 0 5px 10px #888888;
+       -moz-box-shadow: 0 5px 10px #888888;
+            box-shadow: 0 5px 10px #888888;
+}
+.dates{
+    width:100%;
+    margin: 0;
+}
+select{
+    width:29%;
+    padding: 0 2%;
+    -webkit-box-shadow: 0 5px 10px #888888;
+       -moz-box-shadow: 0 5px 10px #888888;
+            box-shadow: 0 5px 10px #888888;
+}
+.big-red-button{
+    font-family: 'ubuntu-medium';
+    margin-top: 10px;
+    padding: 0 2%;
+    width: 96%;
+    color: #FFFFFF;
+    background-color: #d41217;
+    border-radius: 8px;
+    border: none;
+    font-size: 2em;
+    padding: 2px;
+    -webkit-box-shadow: 0 5px 10px #888888;
+       -moz-box-shadow: 0 5px 10px #888888;
+            box-shadow: 0 5px 10px #888888;
+}
+#bottom-navbar-two{
+    width: 25vw;
+    margin: 20px auto;
+    height: 4vh;
+}
+#bottom-navbar-two img{
+    width: 100%;
+}
+
+/*
+
+Media Queries
+
+*/
+
+@media screen and (max-width: 1200px){
+    #top-navbar{
+        width:70vw;
+        margin: 0 0 0 15vw;
+    }
+    #body-cards{
+        width: 70vw;
+    }
+    #titles{
+        width: 70vw;
+        height: 15vmin;
+        margin-top: 30px;
+    }
+    #main-title{
+        font-size: 3vw;
+    }
+    #bottom-navbar{
+        width: 30vw;
+        margin: 0 auto;
+        height: 20px;
+    }
+    #form-and-pics{
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 980px){
+    #top-navbar{
+        width:80vw;
+        margin: 0 0 0 10vw;
+    }
+    #body-cards{
+        width: 80vw;
+    }
+    #body-cards .cards img{
+        width: 40%;
+        margin: 1% 5%;
+    }
+    #titles{
+        width: 80vw;
+        height: 15vmin;
+        margin-top: 30px;
+    }
+    #main-title{
+        font-size:4vw;
+        padding: 20px 0 0 0;
+    }
+}
+@media screen and (max-width: 760px){
+    #dissappear{
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        width:80%;
+        height:87vmin;
+        margin: 0 auto;
+    }
+    #instruction {
+        width: 94%;
+        font-size: 3vw!important;
+    }
+    .big-red-button{
+        cursor: pointer;
+        font-size: 5vw!important;
+    }
+    #body-cards{
+        height: 55vmin;
+    }
+    #body-cards .cards img{
+        width: 45%;
+        margin: 1% 2.5%;
+    }
+    .cards img {
+        display: none;
+    }
+    .mobile img{
+        display: inherit;
+    }
+    #bottom-navbar{
+        display: none;
+    }
+}
